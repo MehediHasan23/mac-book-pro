@@ -11,8 +11,92 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1 id="aa">hello </h1>
-  <!-- js added  -->
+ <main>
+    <section class="container mt-5">
+      <div class="row">
+        <div class="col-lg-5">
+          <img src="images/mac.png" class="img-fluid" alt="">
+        </div>
+        <div class="col-lg-7">
+          <div class="product-details">
+            <h1 >Customize your Blue 24-inch <br>iMac with Appke M1 chip.</h1>
+            <p> <span class="fw-bold">Apple M1</span> chip with 8-core CPU with 4 performence cores & effiency <br> cores, 7-core GPU, & 16-core Neural Engine 8gGB unified memory 256GB <br> ssd storage To ThunderBolt/USB 4 ports Maguc Mouse Magic Keyboard- <br> US English.</p>
+          </div>
+          <div>
+            <!-- about memory  -->
+            <p class="fw-bold">Memory</p>
+            <!-- button added  --> 
+            <div class="btn-group " role="group" aria-label="Basic outlined example">
+              <button type="button" class="btn btn-outline-primary mx-2 text-dark">8GB  unified memory</button>
+              <button type="button" class="btn btn-outline-primary text-dark">16GB unified memory</button>
+            </div>
+            <!-- about storage  -->
+            <div class="mt-5">
+              <p class="fw-bold">storage</p>
+              <div class="btn-group " role="group" aria-label="Basic outlined example">
+                <button type="button" class="btn btn-outline-primary text-dark">256GB ssd storage</button>
+                <button type="button" class="btn btn-outline-primary mx-2 text-dark ">512GB ssd storage</button>
+                <button type="button" class="btn btn-outline-primary text-dark">1TB ssd storage</button>
+              </div>
+            </div>
+            <!-- delevery option  -->
+            <div class="mt-5">
+              <p class="fw-bold">choose your delivery option</p>
+              <div class="btn-group " role="group" aria-label="Basic outlined example">
+                <button type="button" class="btn btn-outline-primary mx-2 text-dark">Friday, aug 25 free Prime Delivery</button>
+                <button type="button" class="btn btn-outline-primary text-dark">Friday, Aug 21 Delivery charge $20</button>
+            </div>
+            <!-- price list  -->
+            <div class="price mt-5 w-50 fw-bold">
+              <table class="table table-hover">
+                  <tbody>
+                      <tr>
+                          <td>Best Price</td>
+                          <td>$
+                              <span id="best-price">1299</span>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>Extra Memory Cost</td>
+                          <td>$
+                              <span id="memory-cost">0</span>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>Extra Storage Cost</td>
+                          <td>$
+                              <span id="storage-cost">0</span>
+                          </td>
+                      </tr>
+                  </tbody>
+                  <tfoot>
+                      <td>Total Price</td>
+                      <td>$
+                          <span id="extra-total-cost">1299</span>
+                      </td>
+                  </tfoot>
+              </table>
+          </div>
+          </div>
+          <!-- promo code  -->
+          <div class="mt-5">
+            <p class="fw-bold">apply promo code</p>
+            <div >
+              <input class="py-1 px-2" type="text">
+              <button class="btn btn-danger">Apply</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+    
+    <footer class="container">
+      <hr>
+      <h2 class="text-center">Total:1299</h2>
+    </footer>
+
+ </main>
   <script src="js/app.js"></script>
 </body>
 </html>
