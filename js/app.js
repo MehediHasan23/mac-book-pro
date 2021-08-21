@@ -45,8 +45,26 @@ function updatePrice(element,price){
   // total amaount 
   const amount = document.getElementById('extra-total-cost')
   amount.innerText = totalExtraPrice;
- 
+  // extra total 
+  const extraTotal = document.getElementById('extra-total')
+  extraTotal.innerText = amount.innerText;
  }
+
+
+// using promo code 
+document.getElementById('promo-code').addEventListener('click', function(){
+  const promoCode = document.getElementById("promo-input")
+  const promoInput = promoCode.value
+  
+  const amount = document.getElementById('extra-total-cost')
+  const extraTotal = document.getElementById('extra-total')
+  let finalAmount = parseInt(amount.innerText);
+  if(promoInput == 'stevekaku'){
+    const discount = (finalAmount/100)*20;
+    extraTotal.innerText = finalAmount - discount;
+  }
+  
+})
 
   
  
