@@ -70,11 +70,3 @@ document.getElementById('promo-code').addEventListener('click', function(){
   promoCode.value = '';
 })
 
-  
- 
-
-
-  
-
-  
-
