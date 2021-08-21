@@ -52,6 +52,7 @@ function updatePrice(element,price){
 
 
 // using promo code 
+
 document.getElementById('promo-code').addEventListener('click', function(){
   const promoCode = document.getElementById("promo-input")
   const promoInput = promoCode.value
@@ -63,7 +64,7 @@ document.getElementById('promo-code').addEventListener('click', function(){
     const discount = (finalAmount/100)*20;
     extraTotal.innerText = finalAmount - discount;
   }
-  
+  promoCode.value = '';
 })
 
   
