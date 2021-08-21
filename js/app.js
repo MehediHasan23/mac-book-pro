@@ -1,3 +1,5 @@
+// added event all button 
+
 document.getElementById('memory-8gb').addEventListener('click',function(){
   updatePrice('memory-cost',0)
 })
@@ -20,7 +22,8 @@ document.getElementById('delivery-paid').addEventListener('click',function(){
   updatePrice('delivery-cost', 20)
 })
 
-
+// added function 
+ 
 function updatePrice(element,price){
   let elementCost = document.getElementById(element);
   elementCost.innerText = price;
